@@ -14,7 +14,9 @@ Draft. Approval of a document does not authorize later builds or publication.
 - [x] Isolated Dev build and single-player gameplay checks.
 - [x] LAN host and guest gameplay checks.
 - [x] Repin to Nightly 2026-11-07; deterministic package; official package check.
-- [ ] Release decisions: version, repository, signing, publication.
+- [x] Release decisions: 1.0.0, dedicated signing key, private repository until release.
+- [x] Repin to the newest Nightly (2026-11-07, `2ebf00a`) and full revalidation.
+- [ ] Media, signature, GitHub release, registry pull request.
 - [ ] Record supported revisions and tested environments; prepare packaging after review.
 
 ## Review gates

@@ -1,6 +1,35 @@
 # Validation
 
-2026-11-07. Candidate pin: Nightly `6560641ba51a452f6bc2407baa4eb1b3be517ca8`; earlier research pin `f4dcf8a2fb4a68b2d28422f4d34d2be2970e26bd`.
+2026-11-08. Release pin: Nightly 2026-11-07 `2ebf00a0281c592f79191e76fce0e7d522c6f425`; earlier pins `6560641ba51a452f6bc2407baa4eb1b3be517ca8`, `f4dcf8a2fb4a68b2d28422f4d34d2be2970e26bd`.
+
+## 1.0.0 Release Candidate on Nightly 2026-11-07 · 2ebf00a
+
+Target: Minecraft 26.3 on Horizon Nightly `2026-11-07` (`2ebf00a0281c592f79191e76fce0e7d522c6f425`),
+the newest Nightly at release time; horizon-mixins `4342a0bfbe71d4d14185528d64e496d6022f16a1`;
+Rust 1.99.1. Checked on 2026-11-07 and 2026-11-08. Mixin target functions and the server call
+site are unchanged from the previous pin.
+
+| Check | Result |
+|---|---|
+| Standalone Rust tests | Passed: 35 |
+| Mixin apply, full workspace | Passed: 4 injections, 5 modules |
+| AST preservation audit | Passed: 3 files; 5 modules, 3 HEAD hooks, 7 RETURN exits |
+| Native Horizon build | Passed: launcher-equivalent Dev build, 15.1 min |
+| Single-player gameplay | Passed: 22 checks (19 behaviour checks plus 3 fixture checks); no "moved wrongly" warnings |
+| Same checks on the unmodified Nightly client | 11 barrier checks fail as expected; the other 11 pass |
+| LAN host and guest | Passed: 34 checks (17 per actor) in three consecutive runs; no "moved wrongly" warnings |
+| Manual test polygon | Reopened with this build; perch confirmed |
+| Package | `fence_perch-1.0.0.hnmod`, 11 entries, 9,395 bytes, SHA-256 `d4b3cef31bc299deb5ea1910ed25059ec5a48bd4eff7af36262c216d278bb266`; a second build was byte-identical; bundle files byte-identical to the committed sources. One bundle file had Windows line endings during the build; after normalising to LF, a fresh apply produced byte-identical generated Horizon files |
+| Official `cargo horizon-mod check` (built at the same Nightly) | Passed: `native-mod` |
+| Dedicated server | Not claimed |
+
+Harness note: with a 4-tick forward input, two of four LAN runs had one guest closed-gate case
+overshoot the 0.25-block gate top and land on the far side (no server correction). The LAN harness
+now uses a 2-tick forward input; three consecutive runs then passed. Single-player uses 4 ticks.
+
+Game runs used the installed Nightly's `horizon-ctl` and prepared 26.3 resources read-only, with
+isolated homes and test worlds. Auto-jump was disabled. Not covered: auto-jump, sprint-jumps,
+swimming, mounted movement, other native mods, joining an unmodified server.
 
 ## 0.1.0 Candidate on Nightly 2026-11-07 (2026-11-07)
 

@@ -1,5 +1,9 @@
 # Research log
 
+## 2026-11-08 — Release candidate on the newest Nightly
+
+**Confirmed:** Repinned 1.0.0 to Nightly 2026-11-07 `2ebf00a0281c592f79191e76fce0e7d522c6f425` without code changes. Dev build, 22 single-player and 34 LAN checks (three runs), package and official check passed. See [validation](../../VALIDATION.md).
+
 ## 2026-11-07 — Nightly repin, LAN and package
 
 **Confirmed:** Repinned to Nightly `6560641ba51a452f6bc2407baa4eb1b3be517ca8` without code changes; target functions unchanged. Dev build, 19 single-player and 34 LAN host/guest checks, deterministic package and official package check passed. See [validation](../../VALIDATION.md).
