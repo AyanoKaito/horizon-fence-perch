@@ -1,0 +1,10 @@
+[package]
+name = "fence-perch"
+version = "1.0.0"
+edition = "2024"
+license = "MIT"
+publish = false
+description = "Player-only barrier collision prototype for Horizon"
+
+[lib]
+path = "mixins/fence_perch/core.rs"

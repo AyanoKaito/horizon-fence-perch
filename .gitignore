@@ -1,0 +1,41 @@
+# Private review material and agent context
+/private/
+/AGENTS.md
+/CLAUDE.md
+/.claude/
+/.opencode/
+/.specify/
+opencode.local.json
+opencode.local.jsonc
+
+# Experiments, upstream source and build staging
+/.local/
+target/
+dist/
+
+# Player data and generated bundles
+test-data/
+worlds/
+saves/
+logs/
+*.hmod
+*.hnmod
+*.jar
+
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.minisig
+secrets.json
+
+# Python tooling, editors and OS files
+.venv/
+__pycache__/
+*.py[cod]
+.obsidian/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

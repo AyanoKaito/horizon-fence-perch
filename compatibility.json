@@ -1,0 +1,22 @@
+{
+  "status": "candidate",
+  "minecraft_version": "26.3",
+  "horizon_repository": "https://github.com/horizon-rust/horizon",
+  "horizon_revision": "6560641ba51a452f6bc2407baa4eb1b3be517ca8",
+  "horizon_source_tag": "nightly-source/2026-11-07-6560641",
+  "horizon_mixins_repository": "https://github.com/horizon-rust/horizon-mixins",
+  "horizon_mixins_revision": "4342a0bfbe71d4d14185528d64e496d6022f16a1",
+  "mixin_schema": 6,
+  "intended_rust_version": "1.99.1",
+  "intended_host": "x86_64-pc-windows-gnu",
+  "validation": {
+    "standalone_rust_tests": "35-passed",
+    "mixin_apply": "passed-4-injections-5-modules",
+    "source_ast_audit": "passed-3-files-3-head-7-return-exits",
+    "native_build": "passed-approved-isolated-dev-profile",
+    "single_player": "19-checks-passed;unmodified-client-fails-11-barrier-checks",
+    "lan_host_guest": "34-checks-passed-17-per-actor",
+    "package_check": "cargo-horizon-mod-check-passed-unsigned",
+    "dedicated_server": "not-claimed"
+  }
+}
