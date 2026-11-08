@@ -38,10 +38,9 @@
 - Stand there, walk along a connected line, then step off on either side.
 - Gates stay closed, so animals stay in the pen while you climb in and out.
 
-<p align="center">
-  <img src="assets/screenshots/fence-line.jpg" width="360" alt="Player standing on a fence line">
-  <img src="assets/screenshots/wall-line.jpg" width="360" alt="Player standing on a wall line">
-</p>
+[![Watch the Fence Perch demo on YouTube](https://img.youtube.com/vi/MNl9MMPWeIY/hqdefault.jpg)](https://youtu.be/MNl9MMPWeIY)
+
+[Watch on YouTube](https://youtu.be/MNl9MMPWeIY): fences, walls, closed gates, walking along a line and climbing into an animal pen.
 
 ## How it works
 
