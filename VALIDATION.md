@@ -20,7 +20,8 @@ site are unchanged from the previous pin.
 | LAN host and guest | Passed: 34 checks (17 per actor) in three consecutive runs; no "moved wrongly" warnings |
 | Manual test polygon | Reopened with this build; perch confirmed |
 | Package | `fence_perch-1.0.0.hnmod`, 11 entries, 9,395 bytes, SHA-256 `d4b3cef31bc299deb5ea1910ed25059ec5a48bd4eff7af36262c216d278bb266`; a second build was byte-identical; bundle files byte-identical to the committed sources. One bundle file had Windows line endings during the build; after normalising to LF, a fresh apply produced byte-identical generated Horizon files |
-| Official `cargo horizon-mod check` (built at the same Nightly) | Passed: `native-mod` |
+| Official `cargo horizon-mod check` (built at the same Nightly) | Passed: `native-mod`; with the project key and signature, `signed: true` |
+| Minisign signature | The author signed the unchanged package; `minisign -V` verifies it with key `61243FA14D03CB43` |
 | Dedicated server | Not claimed |
 
 Harness note: with a 4-tick forward input, two of four LAN runs had one guest closed-gate case

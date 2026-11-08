@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/icon.png" width="160" alt="Fence Perch icon: a blocky figure standing on a fence post">
+</p>
+
 <h1 align="center">Fence Perch</h1>
 
 <p align="center">
@@ -65,5 +69,5 @@ Version 1.0.0 is pinned to Horizon Nightly 2026-11-07 (`2ebf00a0281c592f79191e76
 
 - Mod ID: `fence_perch`.
 - Original implementation; no third-party mod code has been inspected or used.
-- Developed with AI assistance under human direction.
+- Developed with AI assistance under human direction. The icon is original artwork drawn in code for this project (no game assets).
 - License: [MIT](LICENSE).
