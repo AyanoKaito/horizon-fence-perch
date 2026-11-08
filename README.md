@@ -18,7 +18,8 @@
 <p align="center">
   <a href="https://github.com/AyanoKaito/horizon-fence-perch/releases/tag/v1.0.0"><strong>Download</strong></a> &middot;
   <a href="docs/installation.md">Installation</a> &middot;
-  <a href="VALIDATION.md">Validation</a>
+  <a href="VALIDATION.md">Validation</a> &middot;
+  <a href="https://youtu.be/MNl9MMPWeIY">Watch demo</a>
 </p>
 
 <p align="center">
